@@ -11,6 +11,7 @@ public class Customer {
         this.surname = surname;
     }
 
+
     public ArrayList<Address> getAddress() {
         return address;
     }
