@@ -1,5 +1,6 @@
 package org.ulpgc.is1.model;
 
-public class MenuType {
+public enum MenuType {
+    Daily, Tasting, Kids, OffTheMenu;
 
 }
