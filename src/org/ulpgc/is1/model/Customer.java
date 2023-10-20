@@ -4,16 +4,18 @@ public class Customer {
     private Address address;
     private String name;
     private String surname;
+    private ArrayList<Order> orden;
 
     //Generamos el método addAddress para agregar la dirección del cliente
-    void addAddress(String street, int number, int postalCode, String city){
-        Address a = new Address(street, number, postalCode, city);
-        address.add(a);
+    private void addAddress(String street, int number, int postalCode, String city){
+        address = new Address(street, number, postalCode, city);
     }
     //Generación del constructor
-    public Customer(String name, String surname) {
+    public Customer(Address address, String name, String surname, ArrayList<Order> orden) {
+        this.address = address;
         this.name = name;
         this.surname = surname;
+        this.orden = orden;
     }
     //Funciones get() and set()
     public Address getAddress() {
@@ -38,5 +40,13 @@ public class Customer {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public ArrayList<Order> getOrden() {
+        return orden;
+    }
+
+    public void setOrden(ArrayList<Order> orden) {
+        this.orden = orden;
     }
 }

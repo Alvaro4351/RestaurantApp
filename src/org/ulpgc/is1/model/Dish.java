@@ -2,8 +2,7 @@ package org.ulpgc.is1.model;
 //Generación de la clase
 public class Dish {
     private String name;
-    priva
-    te String description;
+    private String description;
     private int price;
 
     //Generación del constructor

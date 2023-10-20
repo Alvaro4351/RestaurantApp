@@ -1,0 +1,348 @@
+Index: src/org/ulpgc/is1/model/Address.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.model;\r\n\r\npublic class Address {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/model/Address.java b/src/org/ulpgc/is1/model/Address.java
+--- a/src/org/ulpgc/is1/model/Address.java	(revision cedd0f3935b9e9ddb581a11ca7a3a436096c0dde)
++++ b/src/org/ulpgc/is1/model/Address.java	(date 1697711284759)
+@@ -1,4 +1,16 @@
+ package org.ulpgc.is1.model;
+ 
+ public class Address {
++    public String street;
++    public int number;
++    public int postalCode;
++    public String city;
++
++    public Address(String street, int number, int postalCode, String city){
++        this.street = street;
++        this.number = number;
++        this.postalCode = postalCode;
++        this.city = city;
++    }
++
+ }
+Index: src/org/ulpgc/is1/model/OrderItem.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.model;\r\n\r\npublic class OrderItem {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/model/OrderItem.java b/src/org/ulpgc/is1/model/OrderItem.java
+--- a/src/org/ulpgc/is1/model/OrderItem.java	(revision cedd0f3935b9e9ddb581a11ca7a3a436096c0dde)
++++ b/src/org/ulpgc/is1/model/OrderItem.java	(date 1697715079527)
+@@ -1,4 +1,10 @@
+ package org.ulpgc.is1.model;
+ 
+ public class OrderItem {
+-}
++    public int quantity;
++
++    public OrderItem(int quantity) {
++        this.quantity = quantity;
++
++    }
++}
+\ No newline at end of file
+Index: src/org/ulpgc/is1/model/Dish.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.model;\r\n\r\npublic class Dish {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/model/Dish.java b/src/org/ulpgc/is1/model/Dish.java
+--- a/src/org/ulpgc/is1/model/Dish.java	(revision cedd0f3935b9e9ddb581a11ca7a3a436096c0dde)
++++ b/src/org/ulpgc/is1/model/Dish.java	(date 1697719687511)
+@@ -1,4 +1,14 @@
+ package org.ulpgc.is1.model;
+ 
+ public class Dish {
+-}
++    public String name;
++    public String description;
++    public int price;
++
++    public Dish(String name, String description, int price) {
++        this.name = name;
++        this.description = description;
++        this.price = price
++
++    }
++}
+\ No newline at end of file
+Index: src/org/ulpgc/is1/control/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.control;\r\n\r\n// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,\r\n// then press Enter. You can now see whitespace characters in your code.\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        // Press Alt+Intro with your caret at the highlighted text to see how\r\n        // IntelliJ IDEA suggests fixing it.\r\n        System.out.printf(\"Hello and welcome!\");\r\n\r\n        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.\r\n        for (int i = 1; i <= 5; i++) {\r\n\r\n            // Press Mayús+F9 to start debugging your code. We have set one breakpoint\r\n            // for you, but you can always add more by pressing Ctrl+F8.\r\n            System.out.println(\"i = \" + i);\r\n\r\n            //prueba Alvaro\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/control/Main.java b/src/org/ulpgc/is1/control/Main.java
+--- a/src/org/ulpgc/is1/control/Main.java	(revision cedd0f3935b9e9ddb581a11ca7a3a436096c0dde)
++++ b/src/org/ulpgc/is1/control/Main.java	(date 1697643997289)
+@@ -15,7 +15,7 @@
+             // for you, but you can always add more by pressing Ctrl+F8.
+             System.out.println("i = " + i);
+ 
+-            //prueba Alvaro
++            //prueba Guille
+         }
+     }
+ }
+\ No newline at end of file
+Index: src/org/ulpgc/is1/model/Customer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.model;\r\n\r\npublic class Customer {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/model/Customer.java b/src/org/ulpgc/is1/model/Customer.java
+--- a/src/org/ulpgc/is1/model/Customer.java	(revision cedd0f3935b9e9ddb581a11ca7a3a436096c0dde)
++++ b/src/org/ulpgc/is1/model/Customer.java	(date 1697712121920)
+@@ -1,4 +1,45 @@
+ package org.ulpgc.is1.model;
+ 
+ public class Customer {
++    public ArrayList<Address> address;
++    public String name;
++    public String surname;
++
++    public Customer(ArrayList<Address> address, String name, String surname) {
++        this.address = address;
++        this.name = name;
++        this.surname = surname;
++    }
++
++    public ArrayList<Address> getAddress() {
++        return address;
++    }
++
++    public void setAddress(ArrayList<Address> address) {
++        this.address = address;
++    }
++
++    public String getName() {
++        return name;
++    }
++
++    public void setName(String name) {
++        this.name = name;
++    }
++
++    public String getSurname() {
++        return surname;
++    }
++
++    public void setSurname(String surname) {
++        this.surname = surname;
++    }
++
++    void addAddress(String street, int number, int postalCode, String city){
++        Address a = new Address(street, number, postalCode, city);
++        address.add( a );
++
++
++    }
++
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d0192bd5-e490-4bbb-a13f-e66a9fbedc93\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Ww7HR99uo5CwMrTYUMyys7R546\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"onboarding.tips.debug.path\": \"C:/Users/alvar/IdeaProjects/RestaurantApp/src/Main.java\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d0192bd5-e490-4bbb-a13f-e66a9fbedc93\" name=\"Changes\" comment=\"\" />\r\n      <created>1697631703325</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1697631703325</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/Main.java</url>\r\n          <line>13</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision cedd0f3935b9e9ddb581a11ca7a3a436096c0dde)
++++ b/.idea/workspace.xml	(date 1697720732617)
+@@ -1,28 +1,90 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d0192bd5-e490-4bbb-a13f-e66a9fbedc93" name="Changes" comment="" />
++    <list default="true" id="d0192bd5-e490-4bbb-a13f-e66a9fbedc93" name="Changes" comment="prueba alvaro">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Address.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Dish.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderItem.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="rama-Alvaro" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="RESET_MODE" value="MIXED" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;Alvaro4351&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="2c294cec-82d5-4b43-aed9-1ddd28806d84" />
++        <option name="url" value="https://github.com/Alvaro4351/RestaurantApp.git" />
++      </UrlAndAccount>
++    </option>
++  </component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+   </component>
++  <component name="ProjectColorInfo">{
++  &quot;customColor&quot;: &quot;&quot;,
++  &quot;associatedIndex&quot;: 8
++}</component>
+   <component name="ProjectId" id="2Ww7HR99uo5CwMrTYUMyys7R546" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "onboarding.tips.debug.path": "C:/Users/alvar/IdeaProjects/RestaurantApp/src/Main.java"
+-  }
+-}]]></component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;cedd0f39&quot;,
++    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/alvar/IdeaProjects/RestaurantApp/src/Main.java&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
++  }
++}</component>
++  <component name="RunManager">
++    <configuration default="true" type="JetRunConfigurationType">
++      <module name="restaurant" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
++      <module name="restaurant" />
++      <option name="filePath" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -32,17 +94,55 @@
+       <option name="presentableId" value="Default" />
+       <updated>1697631703325</updated>
+     </task>
++    <task id="LOCAL-00001" summary="prueba alvaro">
++      <option name="closed" value="true" />
++      <created>1697632525131</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1697632525131</updated>
++    </task>
++    <task id="LOCAL-00002" summary="prueba alvaro">
++      <option name="closed" value="true" />
++      <created>1697718029495</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1697718029495</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/Main.java</url>
+-          <line>13</line>
+-          <option name="timeStamp" value="1" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State>
++              <option name="CUSTOM_BOOLEAN_PROPERTIES">
++                <map>
++                  <entry key="Show.Git.Branches" value="true" />
++                </map>
++              </option>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="rama-Alvaro" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="prueba alvaro" />
++    <option name="LAST_COMMIT_MESSAGE" value="prueba alvaro" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_21\" default=\"true\" project-jdk-name=\"openjdk-21\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision cedd0f3935b9e9ddb581a11ca7a3a436096c0dde)
++++ b/.idea/misc.xml	(date 1697643997407)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
