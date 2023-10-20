@@ -1,10 +1,30 @@
 package org.ulpgc.is1.model;
-
+//Generamos la clase
 public class OrderItem {
-    public int quantity;
+    private int quantity;
+    private Dish plato;
 
-    public OrderItem(int quantity) {
+    //Generamos el constructor
+    public OrderItem(int quantity, Dish plato) {
         this.quantity = quantity;
+        this.plato = plato;
+    }
 
+    //Funciones get() y set()
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public Dish getPlato() {
+        return plato;
+    }
+
+    public void setPlato(Dish plato) {
+        this.plato = plato;
     }
 }

@@ -1,21 +1,26 @@
 package org.ulpgc.is1.model;
-
+//Generación de la clase
 public class Customer {
-    public ArrayList<Address> address;
-    public String name;
-    public String surname;
+    private Address address;
+    private String name;
+    private String surname;
 
-    public Customer(ArrayList<Address> address, String name, String surname) {
-        this.address = address;
+    //Generamos el método addAddress para agregar la dirección del cliente
+    void addAddress(String street, int number, int postalCode, String city){
+        Address a = new Address(street, number, postalCode, city);
+        address.add(a);
+    }
+    //Generación del constructor
+    public Customer(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
-
-    public ArrayList<Address> getAddress() {
+    //Funciones get() and set()
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(ArrayList<Address> address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
@@ -34,12 +39,4 @@ public class Customer {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
-    void addAddress(String street, int number, int postalCode, String city){
-        Address a = new Address(street, number, postalCode, city);
-        address.add( a );
-
-
-    }
-
 }
