@@ -8,8 +8,8 @@ public class Phone {
         this.name = name;
     }
     //Generación del método isValid()
-    private boolean isvalid(){
-        return name != null && !number.isEmpty()
+    private boolean isValid() {
+        return name != null && !name.isEmpty();
     }
     //Funciones get() and set()
     public String getName() {

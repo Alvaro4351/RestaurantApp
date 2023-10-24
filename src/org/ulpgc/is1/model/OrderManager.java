@@ -20,15 +20,6 @@ public class OrderManager {
     private void addDish(String name, String description, int price){
         plato = new ArrayList<Dish>(name, description, price)
     }
-    private void addCustomer(ArrayList<Customer> customer){
-        order = new ArrayList<>()
-    }
-    private void addRestaurant(ArrayList<Restaurant> restaurant){
-
-    }
-    private void addDish(ArrayList<Dish> dish){
-
-    }
 
     public Arraylist<Customer> getCustomer() {
         return customer;
@@ -41,4 +32,5 @@ public class OrderManager {
     public ArrayList<Dish> getDish() {
         return dish;
     }
+
 }

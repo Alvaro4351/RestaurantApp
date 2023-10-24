@@ -16,7 +16,13 @@ public class Order {
         items = new ArrayList<OrderItem>(quantity, plato)
     }
     //Método price()
-´
+    public double price() {
+        double totalPrice = 0.0;
+        for (OrderItem item : items) {
+            totalPrice += item.getTotalPrice();
+        }
+        return totalPrice;
+    }
     // Generamos el constructor
     public Order(int id, ArrayList<OrderItem> items, Customer custom, Restaurant restaurante) {
         this.id = id;
